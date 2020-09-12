@@ -9,7 +9,7 @@ $(document).ready(function () {
         if (input.files && input.files[0]) {
             var reader = new FileReader();
             reader.onload = function (e) {
-
+                $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
                 $('#imagePreview').css('background-position', 'url(' + e.target.result + ')');
                 $('#imagePreview').hide();
                 $('#imagePreview').fadeIn(650);
@@ -46,7 +46,7 @@ $(document).ready(function () {
                 // Get and display the result
                 $('.loader').hide();
                 $('#result').fadeIn(600);
-                $('#result').text(' El modelo sdsmnds que la sdjsdjsgajg pertenece a la dxbcnxcnx:  ' + data);
+                $('#result').text(' La imagen que subió, correponde al deporte:  ' + data);
                 console.log('Success!');
             },
         });
