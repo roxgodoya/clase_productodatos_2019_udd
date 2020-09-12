@@ -10,6 +10,7 @@ $(document).ready(function () {
             var reader = new FileReader();
             reader.onload = function (e) {
                 $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+                $('#imagePreview').css('background-position', 'url(' + e.target.result + ')');
                 $('#imagePreview').hide();
                 $('#imagePreview').fadeIn(650);
             }
