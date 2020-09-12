@@ -46,7 +46,7 @@ $(document).ready(function () {
                 // Get and display the result
                 $('.loader').hide();
                 $('#result').fadeIn(600);
-                $('#result').text(' El modelo predijo que la sdjsdjsgajg pertenece a la dxbcnxcnx:  ' + data);
+                $('#result').text(' El modelo sdsmnds que la sdjsdjsgajg pertenece a la dxbcnxcnx:  ' + data);
                 console.log('Success!');
             },
         });
