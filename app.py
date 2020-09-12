@@ -61,9 +61,6 @@ def upload():
         # Make prediction
         preds = model_predict(file_path)
         return preds
-
-
-
     return None
 
 
