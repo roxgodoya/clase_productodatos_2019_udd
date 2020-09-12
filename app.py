@@ -4,6 +4,7 @@ import sys
 import os
 import glob
 import re
+import secrets
 from pathlib import Path
 
 
@@ -61,6 +62,9 @@ def upload():
         # Make prediction
         preds = model_predict(file_path)
         return preds
+
+
+
     return None
 
 
